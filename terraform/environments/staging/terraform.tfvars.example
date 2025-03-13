@@ -1,0 +1,28 @@
+# General settings
+aws_region   = "us-east-1"
+project_name = "voting-system"
+
+# Required sensitive values (no defaults)
+database_password = "CHANGE_ME_STAGING_PASSWORD_1234" # Use a strong password
+jwt_secret        = "CHANGE_ME_STAGING_JWT_SECRET_1234" # Use a strong secret
+
+# Domain settings
+domain_name = "staging.voting-system.example.com"
+
+# Monitoring settings
+alarm_email = "staging-admin@example.com"
+
+# Application settings - balanced for staging
+backend_instance_count = 2
+frontend_instance_count = 2
+worker_instance_count = 2
+backend_cpu = 512
+backend_memory = 1024
+frontend_cpu = 512
+frontend_memory = 1024
+worker_cpu = 512
+worker_memory = 1024
+
+# Infrastructure settings - balanced for staging
+redis_instance_type = "cache.t4g.medium"
+postgres_instance_type = "db.t4g.medium"

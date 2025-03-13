@@ -1,0 +1,28 @@
+# General settings
+aws_region   = "us-east-1"
+project_name = "voting-system"
+
+# Required sensitive values (no defaults)
+database_password = "CHANGE_ME_STRONG_PASSWORD_FOR_PRODUCTION" # Create a strong, unique password
+jwt_secret        = "CHANGE_ME_STRONG_JWT_SECRET_FOR_PRODUCTION" # Create a strong, unique secret
+
+# Domain settings
+domain_name = "voting-system.example.com"
+
+# Monitoring settings
+alarm_email = "prod-admin@example.com"
+
+# Application settings - optimized for production
+backend_instance_count = 8
+frontend_instance_count = 4
+worker_instance_count = 6
+backend_cpu = 1024  # 1 vCPU
+backend_memory = 2048  # 2 GB
+frontend_cpu = 1024
+frontend_memory = 2048
+worker_cpu = 1024
+worker_memory = 2048
+
+# Infrastructure settings - optimized for production
+redis_instance_type = "cache.m6g.large"
+postgres_instance_type = "db.m6g.large"

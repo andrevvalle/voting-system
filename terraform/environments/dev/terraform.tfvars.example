@@ -1,0 +1,24 @@
+# General settings
+aws_region   = "us-east-1"
+project_name = "voting-system"
+
+# Required sensitive values (no defaults)
+database_password = "CHANGE_ME_1234" # Change this for production!
+jwt_secret        = "CHANGE_ME_JWT_SECRET_1234" # Change this for production!
+
+# Domain settings
+domain_name = "dev.voting-system.example.com"
+
+# Monitoring settings
+alarm_email = "dev-admin@example.com"
+
+# Application settings - resources are kept minimal for development
+backend_instance_count = 1
+frontend_instance_count = 1
+worker_instance_count = 1
+backend_cpu = 256
+backend_memory = 512
+frontend_cpu = 256
+frontend_memory = 512
+worker_cpu = 256
+worker_memory = 512
