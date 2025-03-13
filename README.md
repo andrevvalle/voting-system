@@ -15,6 +15,7 @@ Sistema de votação em alta escala projetado para suportar cenários como o "pa
 ## Documentação
 
 - [Guia de Desenvolvimento Local](#passo-a-passo-para-desenvolvedores)
+- [Comentários Técnicos do Desenvolvedor](COMMENTS.md)
 
 ## Passo a Passo para Desenvolvedores
 
