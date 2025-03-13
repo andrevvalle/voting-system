@@ -4,7 +4,7 @@ Sistema de votação em alta escala projetado para suportar cenários como o "pa
 
 ## Tecnologias Utilizadas
 
-- **Frontend**: React (create-react-app)
+- **Frontend**: React nextjs
 - **Backend**: Node.js com Express (JavaScript vanilla)
 - **Redis**: Cache e contagem em tempo real
 - **PostgreSQL**: Persistência de dados
